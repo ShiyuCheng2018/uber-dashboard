@@ -15,5 +15,5 @@ export default {
     removeUser() {
         // localStorage.removeItem(USER_KEY)
         return store.remove(USER_KEY);
-    },
+    }
 };

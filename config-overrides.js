@@ -5,13 +5,13 @@ module.exports = override(
     fixBabelImports("import", {
         libraryName: "antd",
         libraryDirectory: "es",
-        style: true, // packing related styles automatically
+        style: true // packing related styles automatically
     }),
     // override @primary-color through lessLoader
     addLessLoader({
         lessOptions: {
             javascriptEnabled: true,
-            modifyVars: { "@primary-color": "#1DA57A" },
-        },
+            modifyVars: { "@primary-color": "#1DA57A" }
+        }
     })
 );

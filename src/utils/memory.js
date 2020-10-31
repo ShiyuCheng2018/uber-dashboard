@@ -1,3 +1,3 @@
 export default {
-    user: {}, // save current the logged-in user
+    user: {} // save current the logged-in user
 };

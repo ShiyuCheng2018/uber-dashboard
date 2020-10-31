@@ -3,7 +3,7 @@ import memory from "../../utils/memory";
 import { Redirect, Switch } from "react-router-dom";
 import { Layout } from "antd";
 import Header from "../../components/header/header";
-
+import LeftNav from "../../components/left-nav/left-nav";
 import PrivateRoute from "../../utils/PrivateRoute";
 import { Dashboard } from "../dashboard/dashboard";
 import { Products } from "../products/products";
@@ -26,32 +26,16 @@ export class Admin extends React.Component {
                     <Header />
                     <Content style={{ backgroundColor: "#fff", margin: 20 }}>
                         <Switch>
-                            <PrivateRoute
-                                path={"/dashboard"}
-                                component={Dashboard}
-                            />
-                            <PrivateRoute
-                                path={"/items"}
-                                component={Products}
-                            />
-                            <PrivateRoute
-                                path={"/technology"}
-                                component={Technology}
-                            />
-                            <PrivateRoute
-                                path={"/uberatg"}
-                                component={Uber_atg}
-                            />
-                            <PrivateRoute
-                                path={"/engagement"}
-                                component={Engagement}
-                            />
+                            <PrivateRoute path={"/dashboard"} component={Dashboard} />
+                            <PrivateRoute path={"/items"} component={Products} />
+                            <PrivateRoute path={"/technology"} component={Technology} />
+                            <PrivateRoute path={"/uberatg"} component={Uber_atg} />
+                            <PrivateRoute path={"/engagement"} component={Engagement} />
                             <Redirect to={"/dashboard"} />
                         </Switch>
                     </Content>
                     <Footer style={{ textAlign: "center" }}>
-                        Advanced Artificial Intelligence Ltd. Content Management
-                        System{" "}
+                        Uber Content Management System, powered by Shiyu Cheng
                     </Footer>
                 </Layout>
             </Layout>

@@ -10,11 +10,11 @@ const MenuList = [
         title: "Products",
         key: "/products",
         icon: "DesktopOutlined",
-        children:[
+        children: [
             {
                 title: "Product & Data Science",
                 key: "/productdatascience",
-                icon: "DesktopOutlined",
+                icon: "DesktopOutlined"
             },
             {
                 title: "Payment",
@@ -42,7 +42,7 @@ const MenuList = [
         title: "Technology",
         key: "/technology",
         icon: "DesktopOutlined",
-        children:[
+        children: [
             {
                 title: "Product Engineering",
                 key: "/productengineering",
@@ -79,7 +79,7 @@ const MenuList = [
         title: "Uber ATG",
         key: "/useratg",
         icon: "DesktopOutlined",
-        children:[
+        children: [
             {
                 title: "Product Engineering",
                 key: "/productengineering",
@@ -116,7 +116,7 @@ const MenuList = [
         title: "Engagement",
         key: "/engagement",
         icon: "DesktopOutlined",
-        children:[
+        children: [
             {
                 title: "Product Engineering",
                 key: "/productengineering",

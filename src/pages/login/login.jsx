@@ -2,7 +2,7 @@ import * as React from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import "./login.less";
-import logo from "../../assets/img/Uber_logo_2018.svg";
+import logo from "../../assets/img/Uber_logo.svg";
 import { userLogin } from "../../api";
 import { message } from "antd";
 import memory from "../../utils/memory";
@@ -57,7 +57,7 @@ export class Login extends React.Component {
                         name="normal_login"
                         className="login-form"
                         initialValues={{
-                            remember: true,
+                            remember: true
                         }}
                         onFinish={this.onFinish}
                     >
@@ -66,27 +66,24 @@ export class Login extends React.Component {
                             rules={[
                                 {
                                     required: true,
-                                    message: "Please input your Username!",
+                                    message: "Please input your Username!"
                                 },
                                 {
                                     min: 3,
-                                    message: "Username has to longer than 3!",
+                                    message: "Username has to longer than 3!"
                                 },
                                 {
                                     max: 10,
-                                    message: "Username has to shorter than 10!",
+                                    message: "Username has to shorter than 10!"
                                 },
                                 {
                                     pattern: /^[a-zA-Z0-9_]/,
-                                    message:
-                                        "Username has undefined characters!",
-                                },
+                                    message: "Username has undefined characters!"
+                                }
                             ]}
                         >
                             <Input
-                                prefix={
-                                    <UserOutlined className="site-form-item-icon" />
-                                }
+                                prefix={<UserOutlined className="site-form-item-icon" />}
                                 placeholder="Username: admin"
                             />
                         </Form.Item>
@@ -94,24 +91,18 @@ export class Login extends React.Component {
                             name="password"
                             rules={[
                                 {
-                                    validator: this.validatePwd,
-                                },
+                                    validator: this.validatePwd
+                                }
                             ]}
                         >
                             <Input
-                                prefix={
-                                    <LockOutlined className="site-form-item-icon" />
-                                }
+                                prefix={<LockOutlined className="site-form-item-icon" />}
                                 type="password"
                                 placeholder="Password: admin"
                             />
                         </Form.Item>
                         <Form.Item>
-                            <Form.Item
-                                name="remember"
-                                valuePropName="checked"
-                                noStyle
-                            >
+                            <Form.Item name="remember" valuePropName="checked" noStyle>
                                 <Checkbox>Remember me</Checkbox>
                             </Form.Item>
 
@@ -121,11 +112,7 @@ export class Login extends React.Component {
                         </Form.Item>
 
                         <Form.Item>
-                            <Button
-                                type="primary"
-                                htmlType="submit"
-                                className="login-form-button"
-                            >
+                            <Button type="primary" htmlType="submit" className="login-form-button">
                                 Log in
                             </Button>
                             or <a href="">register now!</a>
