@@ -2,6 +2,7 @@ import * as React from "react";
 import memory from "../../utils/memory";
 import { Redirect, Switch } from "react-router-dom";
 import { Layout } from "antd";
+import Header from "../../components/header/header";
 
 import PrivateRoute from "../../utils/PrivateRoute";
 import { Dashboard } from "../dashboard/dashboard";
