@@ -1,0 +1,10 @@
+{
+    "status": 0,
+    "data": {
+        "username": "Admin",
+        "phone": "2356412313",
+        "email": "admin@email.uber.com",
+        "create_time": "09122020",
+        "role_id": 1
+    }
+}
