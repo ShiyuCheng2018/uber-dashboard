@@ -12,7 +12,6 @@ import LinkButton from "../../components/link-buttom/linkButton";
 
 export class Login extends React.Component {
     onFinish = async (values) => {
-
         const result = await userLogin(values.username, values.password);
         console.log(result);
 
