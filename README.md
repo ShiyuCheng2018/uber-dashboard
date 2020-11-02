@@ -1,6 +1,7 @@
 # Uber Dashboard for OA OCBang
 
 ## Install
+#### Download the repository, then run snippets below:  
 ```javascript
 npm install
 npm start
