@@ -13,7 +13,7 @@ class LeftNav extends React.Component {
             // push either <Menu.Item> or <SubMenu>
             if (!next.children) {
                 pre.push(
-                    <Menu.Item key={next._id} icon={<PieChartOutlined />}>
+                    <Menu.Item key={next.key} icon={next.icon}>
                         <Link to={next.key}>{next.title}</Link>
                     </Menu.Item>
                 );
@@ -25,7 +25,7 @@ class LeftNav extends React.Component {
                 }
 
                 pre.push(
-                    <SubMenu key={`sub${key}`} icon={<PieChartOutlined />} title={next.title}>
+                    <SubMenu key={`sub${key}`} icon={next.icon} title={next.title}>
                         {next.children.map((child, j) => {
                             return (
                                 <Menu.Item key={child.key}>
@@ -42,11 +42,6 @@ class LeftNav extends React.Component {
     };
 
     render() {
-        let path = this.props.location.pathname;
-        if (path.indexOf("/items") === 0) {
-            path = "/items";
-        }
-
         return (
             <>
                 <Link to={"/"} className={"left-nav"}>
@@ -60,7 +55,7 @@ class LeftNav extends React.Component {
                         defaultOpenKeys={[this.openKey]}
                         mode="inline"
                         theme="dark"
-                        selectedKeys={[path]}
+                        defaultSelectedKeys={["/dashboard"]}
                     >
                         {this.getMenuNodes_reduce(MenuList)}
                     </Menu>

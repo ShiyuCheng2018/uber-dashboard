@@ -1,15 +1,22 @@
 import * as React from "react";
+import {
+    PartitionOutlined,
+    ContainerOutlined,
+    HomeOutlined,
+    BranchesOutlined,
+    UnorderedListOutlined
+} from "@ant-design/icons";
 
 const MenuList = [
     {
         title: "Dashboard",
         key: "/dashboard",
-        icon: "PieChartOutlined"
+        icon: <HomeOutlined />
     },
     {
         title: "Products",
-        key: "/products",
-        icon: "DesktopOutlined",
+        key: "products",
+        icon: <ContainerOutlined />,
         children: [
             {
                 title: "Product & Data Science",
@@ -41,7 +48,7 @@ const MenuList = [
     {
         title: "Technology",
         key: "/technology",
-        icon: "DesktopOutlined",
+        icon: <BranchesOutlined />,
         children: [
             {
                 title: "Product Engineering",
@@ -78,36 +85,46 @@ const MenuList = [
     {
         title: "Uber ATG",
         key: "/useratg",
-        icon: "DesktopOutlined",
+        icon: <UnorderedListOutlined />,
         children: [
             {
-                title: "Product Engineering",
-                key: "/productengineering",
+                title: "Software Engineering",
+                key: "/softwareengineering",
                 icon: "PieChartOutlined"
             },
             {
-                title: "Mobility & Marketplace",
-                key: "/mobilitymarketplace",
+                title: "Systems Engineering & Testing",
+                key: "/systemsengineeringtesting",
                 icon: "PieChartOutlined"
             },
             {
-                title: "Product Platform",
-                key: "/productplatform",
+                title: "Hardware & Vehicle",
+                key: "/hardwarevehicle",
                 icon: "PieChartOutlined"
             },
             {
-                title: "infrastructure",
-                key: "/infrastructure",
+                title: "supplychain",
+                key: "/supplychain",
                 icon: "PieChartOutlined"
             },
             {
-                title: "Eats Engineering",
-                key: "/eatsengineering",
+                title: "safety",
+                key: "/saftety",
                 icon: "PieChartOutlined"
             },
             {
-                title: "Technical Program Management",
-                key: "/technicalprogrammanagement",
+                title: "research & development",
+                key: "/researchdevelopment",
+                icon: "PieChartOutlined"
+            },
+            {
+                title: "Product & Design",
+                key: "/productanddesign",
+                icon: "PieChartOutlined"
+            },
+            {
+                title: "strategy",
+                key: "/strategy",
                 icon: "PieChartOutlined"
             }
         ]
@@ -115,36 +132,26 @@ const MenuList = [
     {
         title: "Engagement",
         key: "/engagement",
-        icon: "DesktopOutlined",
+        icon: <PartitionOutlined />,
         children: [
             {
-                title: "Product Engineering",
-                key: "/productengineering",
+                title: "Uber Works",
+                key: "/uberworks",
                 icon: "PieChartOutlined"
             },
             {
-                title: "Mobility & Marketplace",
-                key: "/mobilitymarketplace",
+                title: "Uber Transit",
+                key: "/ubertransit",
                 icon: "PieChartOutlined"
             },
             {
-                title: "Product Platform",
-                key: "/productplatform",
+                title: "Customer Engagement",
+                key: "/customerengagement",
                 icon: "PieChartOutlined"
             },
             {
-                title: "infrastructure",
-                key: "/infrastructure",
-                icon: "PieChartOutlined"
-            },
-            {
-                title: "Eats Engineering",
-                key: "/eatsengineering",
-                icon: "PieChartOutlined"
-            },
-            {
-                title: "Technical Program Management",
-                key: "/technicalprogrammanagement",
+                title: "Incubator",
+                key: "/incubator",
                 icon: "PieChartOutlined"
             }
         ]
