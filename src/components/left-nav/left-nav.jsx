@@ -2,7 +2,6 @@ import * as React from "react";
 import "./index.less";
 import { Link, withRouter } from "react-router-dom";
 import { Menu } from "antd";
-import { PieChartOutlined } from "@ant-design/icons";
 import MenuList from "../../config/menuConfig";
 import { LogoIcon } from "../logo/logo";
 
